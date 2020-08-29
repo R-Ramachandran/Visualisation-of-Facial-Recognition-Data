@@ -24,6 +24,7 @@ def emotion_analysis(emotions):
     fig5 = go.Scatter(x=objects, y=emotions*100, name="",mode= 'markers', marker={'color' : 'yellow', 'size' : emotions*150}, showlegend=False)
 
     img = io.imread("photo.jpeg")
+    
     fig6 = go.Image(z=img)
     
     figure = subplots.make_subplots(
